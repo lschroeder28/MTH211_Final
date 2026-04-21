@@ -7,7 +7,7 @@ A matrix has rank k if its columns (or its rows) span a subspace of dimension k 
 - Rank-0: Zero matrix
 - Rank-1: All rows are multiples of each other, $A=uv^T$.
 
-Example of Rank-1: $u=\pmatrix{x \\ y \\ z}$ and $v^T=(a,b,c)$ so $uv^T=\pmatrix{ax&bx&cx \\ ay&by&cy \\ az&bz&cz}$ $\leftarrow$ every column is a multiple of $u$ and every row is a multiple of $v$
+Example of Rank-1: \[$u=\pmatrix{x \\ y \\ z}$ and $v^T=(a,b,c)$ so $uv^T=\pmatrix{ax&bx&cx \\ ay&by&cy \\ az&bz&cz}$ \]$\leftarrow$ every column is a multiple of $u$ and every row is a multiple of $v$
 
 - Rank- $k$: $A=\sum\limits_{i=1}^{k}u_iv_i^T$, $A=YZ^T$ where $Y$ is $m\times k$, $Z^T$ is $k\times n$
 
