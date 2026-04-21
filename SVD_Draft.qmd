@@ -1,0 +1,10 @@
+---
+title: "SVD_Draft"
+format: html
+---
+
+# Understanding Rank
+A matrix has rank k if its columns (or its rows) span a subspace of dimension k (i.e. there are k pivots in the RREF). However we have some equivalent definitions.
+- Rank-0: Zero matrix
+- Rank-1: All roaws are multiples of each other, $A=uv^T$.
+- - ex: $u=\pmatrix{x\\y\\z}$ and $v^T=(a,b,c)$ so $uv^T=\pmatrix{ax&bx&cx\\ay&by&cy\\az&bz&cz}$ $\leftarrow$ every column is a multiple of $u$ and every row is a multiple of $v$
