@@ -9,7 +9,7 @@ A matrix has rank k if its columns (or its rows) span a subspace of dimension k 
 
 Example of Rank-1: $u=\pmatrix{x\\y\\z}$ and $v^T=(a,b,c)$ so $uv^T=\pmatrix{ax&bx&cx\\ay&by&cy\\az&bz&cz}$ $\leftarrow$ every column is a multiple of $u$ and every row is a multiple of $v$
 
-- Rank-$k$: $A=\sum\limits_{i=1}^{k}u_iv_i^T$, $A=YZ^T$ where $Y$ is $m\times k$, $Z^T$ is $k\times n$
+- Rank- $k$: $A=\sum\limits_{i=1}^{k}u_iv_i^T$, $A=YZ^T$ where $Y$ is $m\times k$, $Z^T$ is $k\times n$
 
 ### Low-Rank Approximation
 A given matrix $A$ has a large dimension $m\times n$ ($mn$ elements) but using $A=YZ^T$ we get two matrices with $mk+nk$ elements. If $k$ is small then we have much fewer elements.
@@ -30,7 +30,7 @@ SVD expresses $A$ as a weighted sum of rank-1 components ordered by importance (
 ### Computing Low-Rank Approximations
 Rank-$k$ approximation:
 - Keep only the top $k$ singular values and vectors:
-$$A_k=\sum\limits_{i=1}^ks_iu_iv_i=U_kS_kV_k^T$$
+$$ A_k=\sum\limits_{i=1}^ks_iu_iv_i=U_kS_kV_k^T $$
 Where:
 
 $U_k$ is first $k$ columns of $U$,
@@ -41,4 +41,4 @@ $V_k$ is first $k$ columns of $V$
 
 ### Choosing $k$
 Choose $k$ such that:
-$$\frac{\sum\limits_{i=1}^ks_i^2}{\sum\limits_{j=1}^{\text{min}(m,n)}s_j^2}\geq 0.9$$
+$$ \frac{\sum\limits_{i=1}^ks_i^2}{\sum\limits_{j=1}^{\text{min}(m,n)}s_j^2}\geq 0.9 $$
