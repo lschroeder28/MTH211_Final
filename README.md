@@ -30,7 +30,7 @@ SVD expresses $A$ as a weighted sum of rank-1 components ordered by importance (
 ### Computing Low-Rank Approximations
 Rank-$k$ approximation:
 - Keep only the top $k$ singular values and vectors:
-$$ A_k=\sum\limits_{i=1}^ks_iu_iv_i=U_kS_kV_k^T $$
+$$A_k=\sum\limits_{i=1}^ks_iu_iv_i=U_kS_kV_k^T$$
 Where:
 
 $U_k$ is first $k$ columns of $U$,
@@ -41,4 +41,4 @@ $V_k$ is first $k$ columns of $V$
 
 ### Choosing $k$
 Choose $k$ such that:
-$$ \frac{\sum\limits_{i=1}^ks_i^2}{\sum\limits_{j=1}^{\text{min}(m,n)}s_j^2}\geq 0.9 $$
+$$\frac{\sum\limits_{i=1}^ks_i^2}{\sum\limits_{j=1}^{\text{min}(m,n)}s_j^2}\geq 0.9$$
